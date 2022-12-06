@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item"><a class="menu__list-link" href="about.html">О нас</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="gallery.html">Галерея</a></li>
+            </ul>
+          </nav>
+          <a class="logo" href="index.html">
+            <img src="images/logo.png" alt="logo">
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item"><a class="menu__list-link menu__list-link--active" href="blog.html">Блог</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+          <a href="tel:380950775474" class="header__phone">
+            <img src="images/phone.svg" alt="phone">
+          </a>
+          <button class="header__btn-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link"  href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link"  href="#">Блог</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="blog">
+        <div class="container">
+          <div class="blog__inner">
+
+            <div class="blog__items">
+              <div class="blog__item">
+                <img class="blog__item-img" src="images/blog/1.jpg" alt="images">
+                <div class="blog__item-info">
+                  <span class="blog__item-date">12 марта 2022</span>|
+                  <a class="blog__item-author" href="#">Екатерина К.</a>|
+                  <a class="blog__item-theme" href="#">Пляжи</a>
+                </div>
+                <a class="blog__ite-link" href="blog-one.html" >
+                  <h3 class="blog__item-title">Квариати. Чистые пляжи, которые простираются вдоль берега Черного моря.</h3>
+                </a>
+                <p class="blog__ite-text">Пляж Квариати находится в 15 км от Батуми в поселке Квариати. Он расположен между пляжами Гонио и Сарпи. Этот пляж один из самых чистых вокруг Батуми, поэтому сюда любят приезжать местные жители.</p>
+              </div>
+
+              <div class="blog__item article-popup">
+                <div class="article-popup__box">
+                  <img class="blog__item-img" src="images/blog/2.jpg" alt="images">
+                  <a class="blog__item-popup" data-fancybox href="https://www.youtube.com/watch?v=a5lnp6XBdXs" >
+                    <img class="blog__item-play" src="images/play-button.svg" alt="play button" >
+                  </a>
+                </div>
+                <div class="blog__item-info">
+                  <span class="blog__item-date">12 марта 2022</span>|
+                  <a class="blog__item-author" href="#">Анастасия Л.</a>|
+                  <a class="blog__item-theme" href="#">Традиции</a>
+                </div>
+                <a class="blog__ite-link" href="#" >
+                  <h3 class="blog__item-title">Интересные факты о Грузии, о которых вы точно не знали.</h3>
+                </a>     
+              </div>
+
+              <blockquote class="blog__blockquote">
+                "Жизнь как пьеса в театре: важно не то, сколько она длится, а насколько хорошо сыграна."
+                <div class="blog__blockquote-author">
+                  Сенека
+                </div>
+              </blockquote>
+
+              <div class="blog__item article-slider">
+                <div class="article-slider__box">
+                  <img class="article-slider__img" src="images/blog/3.jpg" alt="images">
+                  <img class="article-slider__img" src="images/blog/4.jpg" alt="images">
+                  <img class="article-slider__img" src="images/blog/5.jpg" alt="images">
+                </div>  
+                  <div class="blog__item-info">
+                    <span class="blog__item-date">12 марта 2022</span>|
+                    <a class="blog__item-author" href="#">Екатерина К.</a>|
+                    <a class="blog__item-theme" href="#">Пляжи</a>
+                  </div>
+                  <a class="blog__ite-link" href="#" >
+                    <h3 class="blog__item-title">Особенности кухни в Батуми.</h3>
+                  </a>
+                  <p class="blog__item-text">Национальная кухня Грузии построена на контрасте острых и пряных блюд. Весьма распространены овощи, которые могут служить как самостоятельным блюдом, так и гарниром.</p>
+                
+              </div>
+
+              <div class="pagination">
+                <a class="pagination__arrow pagination__arrow--disabled" href="#">
+                  <img class="pagination__arrow-icon" src="images/arrow-left.svg" alt="arrow icon" >
+                </a>
+                <ul class="pagination__list">
+                  <li class="pagination__list-item">
+                    <a class="pagination__list-num pagination__list-num--active" href="#">1</a>
+                  </li>
+                  <li class="pagination__list-item">
+                    <a class="pagination__list-num" href="#">2</a>
+                  </li>
+                </ul>
+                <a class="pagination__link" href="#">
+                  <img class="pagination__arrow-icon" src="images/arrow-right.svg" alt="arrow icon" >
+                </a>
+              </div>
+            </div>
+  
+            <aside class="aside">
+              <form class="aside__search">
+                <input class="aside__search-input" type="text" placeholder="Поиск">
+                <button class="aside__search-btn" type="submit">
+                  <img src="images/search-icon.svg" alt="search">
+                </button>
+              </form>
+              
+              <div class="blog__category">
+                <h6 class="blog__category-title">Категории</h6>
+                <ul class="blog__category-list">
+                  <li class="blog__category-item"><a class="blog__category-link" href="#">Экскурсии (2)</a></li>
+                  <li class="blog__category-item"><a class="blog__category-link" href="#">Традиции (3)</a></li>
+                  <li class="blog__category-item"><a class="blog__category-link" href="#">Достопримечателности (4)</a></li>
+                  <li class="blog__category-item"><a class="blog__category-link" href="#">Кухня (11)</a></li>
+                  <li class="blog__category-item"><a class="blog__category-link" href="#">Пляжи (8)</a></li>
+                </ul>
+              </div>
+              <div class="resent-posts">
+                <h6 class="resent-posts__title">
+                  Последние посты
+                </h6>
+                <ul class="resent-posts__list">
+                  <li class="resent-posts__item">
+                    <a class="resent-posts__item-title" href="#">Квариати. Чистые пляжи, которые простираются вдоль берега Черного моря.</a>
+                    <span class="resent-posts__date">12 марта 2022</span> |
+                    <a class="resent-posts__author" href="#">Екатерина К.</a>
+                  </li>
+                  <li class="resent-posts__item">
+                    <a class="resent-posts__item-title" href="#">Интересные факты о Грузии, о которых вы точно не знали.</a>
+                    <span class="resent-posts__date">12 марта 2022</span>|
+                    <a class="resent-posts__author" href="#">Анастасия Л.</a>
+                  </li>
+                  <li class="resent-posts__item">
+                    <a class="resent-posts__item-title" href="#">Квариати. Чистые пляжи, которые простираются вдоль берега Черного моря.</a>
+                    <span class="resent-posts__date">12 марта 2022</span> |
+                    <a class="resent-posts__author" href="#">Екатерина К.</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="blog__tags">
+                <h6 class="blog__tags-title">
+                  Теги 
+                </h6>
+                <a class="blog__tags-link" href="#">Кухня</a>
+                <a class="blog__tags-link" href="#">Море</a>
+                <a class="blog__tags-link" href="#">Традиции</a>
+                <a class="blog__tags-link" href="#">Пляжи</a>
+                <a class="blog__tags-link" href="#">Экскурсии</a>
+              </div>
+              <ul class="blog__social">
+                <li class="blog__social-item">
+                  <a class="blog__social-link" href="#">
+                    <img class="blog__social-img" src="images/instagram.svg" alt="instagram">
+                  </a>
+                </li>
+                <li class="blog__social-item">
+                  <a class="blog__social-link" href="#">
+                    <img class="blog__social-img" src="images/facebook.svg" alt="facebook">
+                  </a>
+                </li>
+                <li class="blog__social-item">
+                  <a class="blog__social-link" href="#">
+                    <img class="blog__social-img" src="images/whatsapp.svg" alt="whatsapp">
+                  </a>
+                </li>
+                <li class="blog__social-item">
+                  <a class="blog__social-link" href="#">
+                    <img class="blog__social-img" src="images/viber.svg" alt="viber">
+                  </a>
+                </li>
+                <li class="blog__social-item">
+                  <a class="blog__social-link" href="#">
+                    <img class="blog__social-img" src="images/youtube.svg" alt="youtube">
+                  </a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer__contant">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__info">
+              <h6 class="footer__info-title">
+                Свяжитесь с нами
+              </h6>
+              <p class="footer__info-text">
+                Отправьте сообщение или свяжитесь с нами в соц.сетях
+              </p>
+              <a class="info-email" href="mailto:sova.rezerv@gmail.com">sova.rezerv@gmail.com</a>
+              <form class="footer__form">
+                <input class="footer__form-input" type="email" placeholder="Электронная почта">
+                <button class="footer__form-button" type="submit">Отправить</button>
+              </form>
+            </div>
+            <ul class="footer__sosial">
+              <li class="footer__sosial-item">
+                <a class="footer__sosial-link footer__sosial-link--facebook" href="#">
+                  Facebook
+                </a>
+              </li>
+              <li class="footer__sosial-item">
+                <a class="footer__sosial-link footer__sosial-link--instagram" href="#">
+                  Instagram
+                </a>
+              </li>
+              <li class="footer__sosial-item">
+                <a class="footer__sosial-link footer__sosial-link--whatsapp" href="#">
+                  WhatsApp
+                </a>
+              </li>
+              <li class="footer__sosial-item">
+                <a class="footer__sosial-link footer__sosial-link--viber" href="#">
+                  Viber
+                </a>
+              </li>
+              <li class="footer__sosial-item">
+                <a class="footer__sosial-link footer__sosial-link--youtube" href="#">
+                  Youtube
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copy">
+        <div class="container">
+          <p>
+            2021 Все права защищены
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
